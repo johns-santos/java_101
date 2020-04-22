@@ -25,21 +25,21 @@ public class PersonTest {
 
     @Test
     public void shouldReturnNumberOfPersons() {
-        Person person1 = new Person();
-        Person person2 = new Person();
-        Person person3 = new Person();
-        Person person4 = new Person();
-        assertEquals(4, Person.numberOfPersons());
-    }
+        Person person1;
+        for (int i = 0; i < 4; i++) {
+           person1 = new Person();
+        }
+            assertEquals(4, Person.numberOfPersons());
+        }
 
     @Test
     public void demonstrateBoolean() {
-//        boolean monday = false;
-//        boolean raining = true;
-//        boolean tuesday = true;
-//        boolean sunny = true;
-//        boolean friday = true;
-//
+        boolean monday = false;
+        boolean raining = true;
+        boolean tuesday = true;
+        boolean sunny = true;
+        boolean friday = true;
+
 //        if (monday) {
 //            drinkBeer();
 //        } else if (friday) {
@@ -49,23 +49,24 @@ public class PersonTest {
 //        } else {
 //            drinkMilk();
 //        }
-//    }
-
-        int i = 4;
-        int j = 3;
-        boolean areEqual = i == j;
-
-        if (i > j) {
-            executeMethod1();
-        } else if (j > i) {
-            executeMethod2();
-        } else if (areEqual) {
-            executeMethod3();
-        } else {
-            executeMethod4();
-        }
-        }
+//=================== example 2====================
+//        int i = 4;
+//        int j = 3;
+//        boolean areEqual = i == j;
+//
+//        if (i > j) {
+//            executeMethod1();
+//        } else if (j > i) {
+//            executeMethod2();
+//        } else if (areEqual) {
+//            executeMethod3();
+//        } else {
+//            executeMethod4();
     }
+        }
+
+
+
 
 
 
