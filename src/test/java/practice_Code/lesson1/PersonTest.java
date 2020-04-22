@@ -26,11 +26,22 @@ public class PersonTest {
     @Test
     public void shouldReturnNumberOfPersons() {
         Person person1;
-        for (int i = 0; i < 4; i++) {
-           person1 = new Person();
+
+        // create four persons with WHILE loop
+        int i = 0;
+        while (i < 4) {// WHILE LOOP
+            person1 = new Person();
+            i++;
         }
-            assertEquals(4, Person.numberOfPersons());
+        assertEquals(4, Person.numberOfPersons());
+
+        // create five additional persons with FOR loop
+        for (int x = 0; x < 5; x++) { // FOR LOOP
+            person1 = new Person();
         }
+        assertEquals(9, Person.numberOfPersons());
+    }
+
 
     @Test
     public void demonstrateBoolean() {
